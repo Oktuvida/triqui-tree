@@ -1,0 +1,42 @@
+{
+  "name": "triqui-tree",
+  "version": "0.1.0",
+  "description": "Tic-tac-toe with Minimax algorithm alpha-beta pruning and graphial interface",
+  "main": "index.js",
+  "bin": {
+    "create-wasm-app": ".bin/create-wasm-app.js"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oktuvida/triqui-tree.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "minimax",
+    "tic-tac-toe"
+  ],
+  "contributors": [
+    "Diryon Mora <oktuvida@hotmail.com>", 
+    "María García <mariacamila.garciara@urosario.edu.co>", 
+    "Valentina Hernández <valentina.hernandezq@urosario.edu.co>",
+    "Mariana Ramírez <mariana.ramireza@urosario.edu.co>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Oktuvida/triqui-tree/blob/main/README.md",
+  "dependencies": {
+    "triqui-tree": "file:../pkg"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.0",
+    "hello-wasm-pack": "^0.1.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
