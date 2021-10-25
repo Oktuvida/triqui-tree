@@ -1,4 +1,4 @@
-# Triqui Tree, tres en raya escrito en Rust usando WebAssembly
+![Triqui Tree](./img/logo.png)
 ¡Puedes jugarlo en [`https://oktuvida.github.io/triqui-tree/`](https://oktuvida.github.io/triqui-tree/) !
 
 *Lee esto en otros lenguajes: [English](README.md), [Español](README.es.md)*.

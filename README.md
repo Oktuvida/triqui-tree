@@ -1,4 +1,4 @@
-# Triqui Tree, tic-tac-toe written in Rust using WebAssembly
+![Triqui Tree](./img/logo.png)
 You can play it at [`https://oktuvida.github.io/triqui-tree/`](https://oktuvida.github.io/triqui-tree/) !
 
 *Read this in other languages: [English](README.md), [Español](README.es.md)*.
