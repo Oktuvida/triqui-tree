@@ -1,0 +1,27 @@
+[package]
+name = "triqui-tree"
+version = "0.1.0"
+edition = "2021"
+description = "Tic-tac-toe with MiniMax Alpha-Beta pruning algorithm implemented"
+authors = [
+  "Diryon Mora <oktuvida@hotmail.com>", 
+  "María García <mariacamila.garciara@urosario.edu.co>", 
+  "Valentina Hernández <valentina.hernandezq@urosario.edu.co>",
+  "Mariana Ramírez <mariana.ramireza@urosario.edu.co>"
+]
+license = "MIT"
+repository = "https://github.com/Oktuvida/triqui-tree"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
+[dependencies]
+wasm-bindgen = "0.2.78"
+console_error_panic_hook = { version = "0.1.6", optional = true }
+wee_alloc = { version = "0.4.5", optional = true }
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.13"

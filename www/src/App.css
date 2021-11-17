@@ -1,0 +1,223 @@
+:root {
+  --lotus: #7d3b3b;
+  --east_bay: #3b467d;
+  --goblin: #3b7d4d;
+  --olivine: #95ba5a;
+
+  --culture: #f6f3f4;
+  --mischka: #e3dde9;
+  --mystic: #dde9e8;
+  --satin_linen: #e9e5dd;
+
+}
+
+body {
+  background-color: var(--goblin);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 10rem;
+  transform: translateX(-50%);
+}
+
+header img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 50rem;
+  min-width: 20rem;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 85vh;
+  top: 15vh;
+}
+
+.box_selection {
+  background-color: var(--culture);
+  position: absolute;
+  top: 35vh;
+  left: 50vw;
+  transform: translate(-50%, -35%);
+  padding: 2rem;
+  border-radius: .5rem;
+  height: 15rem;
+  width: max(15rem, 40vw);
+}
+
+.box_selection .title {
+  font-size: max(1.2rem, 2.5vw);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.box_selection .options {
+  display: flex;
+  width: 100%;
+}
+
+.size_selection .btn {
+  margin: 0 .2rem;
+  width: 33%;
+}
+
+.size_selection .btn p {
+  font-weight: 600;
+}
+
+.options button, 
+.result_box button {
+  font-size: max(.8rem, 1.5vw);
+  font-weight: 500;
+  padding: .5rem;
+  border: none;
+  outline: none;
+  background: var(--goblin);
+  color: var(--satin_linen);
+  border-radius: .2rem;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.options button {
+  width: 100%;
+}
+
+.options button.player_x {
+  margin-right: .3rem;
+}
+
+.options button.player_y {
+  margin-left: .3rem;
+}
+
+.options button:hover,
+.result_box button:hover {
+  transform: scale(.95);
+}
+
+.board, .result_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.board {
+  margin-top: 3rem;
+}
+
+.board .details {
+  background-color: var(--mischka);
+  padding: .5rem;
+  width: calc(100% - .5rem);
+  margin: 0 auto;
+  border-radius: .3rem;
+}
+
+.board .players {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  border-radius: .3rem;
+}
+
+.board .players span {
+  width: 100%;
+  border-radius: .3rem;
+  padding: .3rem 0;
+  font-weight: 500;
+  text-align: center;
+  color: var(--goblin);
+  position: relative;
+  z-index: 3;
+}
+
+.board .players span:first-child {
+  color: var(--mystic);
+}
+
+.board .players .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-color: var(--goblin);
+  border-radius: .3rem;
+  z-index: 2;
+}
+
+.board .play_area {
+  margin-top: 1rem;
+}
+
+.board section {
+  display: flex;
+}
+
+.board section span {
+  display: block;
+  height: 8rem;
+  width: 8rem;
+  margin: .3rem;
+  background: var(--mischka);
+  border-radius: .3rem;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 8rem;
+  color: var(--goblin);
+  cursor: pointer;
+}
+
+.result_box {
+  background: var(--satin_linen);
+  padding: 1rem;
+  border-radius: .25rem;
+  width: 100%;
+  max-width: 25rem;
+
+
+}
+
+.result_box .winner_text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.result_box .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.result_box .btn button {
+  padding: .5rem 1rem;
+}
+
+@media ( max-width: 800px ) {
+  .board {
+    margin-top: 1rem;
+  }
+  .board .players {
+    font-size: 1.5rem;
+  }
+  .board section span {
+    height: 5rem;
+    width: 5rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+}
