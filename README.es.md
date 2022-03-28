@@ -1,5 +1,5 @@
 ![Triqui Tree](./img/logo.png)
-¡Puedes jugarlo en [`https://oktuvida.github.io/triqui-tree/`](https://oktuvida.github.io/triqui-tree/) !
+¡Puedes jugarlo en [`https://oktuvida.github.io/triqui_tree/`](https://oktuvida.github.io/triqui_tree/) !
 
 *Lee esto en otros lenguajes: [English](README.md), [Español](README.es.md)*.
 ## ¿Por qué tres en raya?

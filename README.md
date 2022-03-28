@@ -1,5 +1,5 @@
 ![Triqui Tree](./img/logo.png)
-You can play it at [`https://oktuvida.github.io/triqui-tree/`](https://oktuvida.github.io/triqui-tree/) !
+You can play it at [`https://oktuvida.github.io/triqui_tree/`](https://oktuvida.github.io/triqui_tree/) !
 
 *Read this in other languages: [English](README.md), [Español](README.es.md)*.
 ## Why Tic-tac-toe?
